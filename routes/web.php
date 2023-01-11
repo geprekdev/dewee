@@ -32,6 +32,10 @@ Route::middleware('auth')->group(function () {
     Route::get('/products/ekraf', EkrafController::class)->name('products.ekraf');
 })->prefix("admin");
 
+Route::get("/desawisata", function () {
+    return Inertia::render('DetailTouristVillage');
+})->name('detailTouristVillage');
+
 
 
 require __DIR__ . '/auth.php';
