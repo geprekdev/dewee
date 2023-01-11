@@ -13,8 +13,9 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('tourist_villages', function (Blueprint $table) {
+        Schema::create('products', function (Blueprint $table) {
             $table->id();
+            $table->string('type');
             $table->string('name');
             $table->string('address');
             $table->string('city');
@@ -22,7 +23,8 @@ return new class extends Migration
             $table->decimal('longitude', 10, 7);
             $table->text('description');
             $table->text('images');
-            $table->text('attractions');
+            $table->bigInteger('price');
+            $table->foreignId('tourist_village_id')->constrained('tourist_villages');
             $table->timestamps();
         });
     }
@@ -34,6 +36,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('tourist_villages');
+        Schema::dropIfExists('products');
     }
 };
