@@ -215,6 +215,16 @@ export default function Umkm(props) {
                             </tr>
                             <tr className="group-odd:bg-gray-50 group">
                                 <td className="whitespace-nowrap px-4 py-2 font-medium text-gray-900">
+                                    <InputLabel forInput="price">
+                                        Desa Wisata
+                                    </InputLabel>
+                                </td>
+                                <td className="whitespace-nowrap px-4 py-2 text-gray-700">
+                                    <TextInput id="price" />
+                                </td>
+                            </tr>
+                            <tr className="group-odd:bg-gray-50 group">
+                                <td className="whitespace-nowrap px-4 py-2 font-medium text-gray-900">
                                     <button
                                         className="px-2 py-1 bg-gray-200"
                                         onClick={() => setShowModal(false)}
