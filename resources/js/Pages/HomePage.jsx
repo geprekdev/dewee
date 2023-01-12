@@ -1,5 +1,6 @@
 import { Link, Head, InertiaLink } from "@inertiajs/inertia-react";
 import Navbar from "@/Components/Navbar";
+import Footer from "@/Components/Footer";
 
 export default function Welcome(props) {
     return (
@@ -15,7 +16,7 @@ export default function Welcome(props) {
                         <div className="mt-8 w-full flex flex-wrap justify-center gap-4">
                             <div className="pt-2 relative mx-auto text-gray-600">
                                 <input
-                                    className="border-2 border-gray-300 bg-white h-10 px-5 pr-16 rounded-lg text-sm focus:outline-none"
+                                    className="border-2  bg-white h-10 px-5 pr-16 rounded-lg text-sm  focus:border-none focus:outline-none"
                                     type="search"
                                     name="search"
                                     placeholder="Search"
@@ -53,7 +54,7 @@ export default function Welcome(props) {
                         Teratas Minggu Ini
                     </h1>
                     <div className="flex justify-evenly">
-                        <div className="max-w-[400px] hover:shadow">
+                        <div className="max-w-[400px] hover:shadow-xl ">
                             <InertiaLink
                                 href="/desawisata"
                                 className="block rounded-lg p-4 shadow-sm shadow-indigo-100"
@@ -131,7 +132,7 @@ export default function Welcome(props) {
                                 </div>
                             </InertiaLink>
                         </div>
-                        <div className="max-w-[400px] hover:shadow">
+                        <div className="max-w-[400px] hover:shadow-xl #172249]">
                             <InertiaLink
                                 href="/desawisata"
                                 className="block rounded-lg p-4 shadow-sm shadow-indigo-100"
@@ -209,7 +210,7 @@ export default function Welcome(props) {
                                 </div>
                             </InertiaLink>
                         </div>
-                        <div className="max-w-[400px] hover:shadow">
+                        <div className="max-w-[400px] hover:shadow-xl #172249]">
                             <InertiaLink
                                 href="/desawisata"
                                 className="block rounded-lg p-4 shadow-sm shadow-indigo-100"
@@ -294,7 +295,7 @@ export default function Welcome(props) {
                         Produk UMKM Unggulan
                     </h1>
                     <div className="flex justify-evenly">
-                        <div className="max-w-[400px] hover:shadow">
+                        <div className="max-w-[400px] hover:shadow-xl #172249]">
                             <a
                                 href="#"
                                 className="block rounded-lg p-4 shadow-sm shadow-indigo-100"
@@ -372,7 +373,7 @@ export default function Welcome(props) {
                                 </div>
                             </a>
                         </div>
-                        <div className="max-w-[400px] hover:shadow">
+                        <div className="max-w-[400px] hover:shadow-xl #172249]">
                             <a
                                 href="#"
                                 className="block rounded-lg p-4 shadow-sm shadow-indigo-100"
@@ -450,7 +451,7 @@ export default function Welcome(props) {
                                 </div>
                             </a>
                         </div>
-                        <div className="max-w-[400px] hover:shadow">
+                        <div className="max-w-[400px] hover:shadow-xl #172249]">
                             <a
                                 href="#"
                                 className="block rounded-lg p-4 shadow-sm shadow-indigo-100"
@@ -531,6 +532,8 @@ export default function Welcome(props) {
                     </div>
                 </div>
             </section>
+
+            <Footer />
         </>
     );
 }
